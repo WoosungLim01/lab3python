@@ -20,6 +20,7 @@ def print_n(s,n):
   print(s) 
   print_n(s,n-1)
   
-num=int(input("Enter an int: "))
-print(f"sum is {sum_n(num)}.")
-print_n(input("Enter a string: "), num)
+if __name__ == "__main__":
+  num=int(input("Enter an int: "))
+  print(f"sum is {sum_n(num)}.")
+  print_n(input("Enter a string: "), num)
